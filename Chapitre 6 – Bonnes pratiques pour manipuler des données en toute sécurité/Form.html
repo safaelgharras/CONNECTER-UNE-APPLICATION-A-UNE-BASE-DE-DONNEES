@@ -3,22 +3,21 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Connexion</title>
+    <title>Document</title>
 </head>
 <body>
-    
-    <FORM>
+    <h2>Form</h2>
 
-        <h2>AJOUTER UN UTILISATEUR</h2>
+    <form action="ajout_utilisateur_secure.php" method="post">
+        <label >Nom: </label> <br>
+        <input type="text" name="nom" id="Name"> <br> <br>
 
-        <label>Nom: </label> <br>
-        <input type="text" name="nom" id="nom" required> <br> <br>
         <label>Email: </label> <br>
-        <input type="text" name="email" id="email" required> <br> <br>
+        <input type="text" name="email" id="Email"> <br> <br>
 
-       <button type="submit">Envoyer</button>
+        <button type="submit">Submit</button>
 
-    </FORM>
+    </form>
     
 </body>
 </html>
