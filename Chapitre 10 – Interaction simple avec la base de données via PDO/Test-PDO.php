@@ -10,7 +10,7 @@ foreach ($articles as $article) {
 }
 
 
-$sql = "INSERT INTO articles (titre, contenu, auteur) VALUES (:titre, :contenu, :auteur)";
+$sql = "INSERT INTO Articles (titre, contenu, auteur) VALUES (:titre, :contenu, :auteur)";
 $stmt = $db->prepare($sql);
 $stmt->execute([
     'titre' => 'Nouveau post',
