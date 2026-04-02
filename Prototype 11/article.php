@@ -25,9 +25,9 @@ class Article{
 
     $stmt = $this->conn->prepare($sql);
 
-    return $stmt->execute([
-        'titre'=>$this->titre,
-        'contenu'=>$this->contenu
-    ]);
-}
+        return $stmt->execute([
+            'titre'=>$this->titre,
+            'contenu'=>$this->contenu
+        ]);
+    }
 }
